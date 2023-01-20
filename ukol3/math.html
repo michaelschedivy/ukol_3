@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <title>Geeks for Geeks</title>
+    <script src="math.js" ></script>
+</head>
+  <body>
+    <div class="w3-container w3-black w3-xlarge w3-padding">
+      <a href="index.html" class="w3-button">Domů</a>
+      <a href="login.html" class="w3-button">Login</a>
+      <a href="math.html" class="w3-button">Matematika</a>
+      <a href="#" class="w3-button">Kurzy</a>
+
+      <a href="#" class="w3-button w3-right w3-round-xxlarge w3-margin-left w3-border w3-border-green">Hledat</a>
+      <input style="width: 250px" class="w3-input w3-right w3-container w3-round-xxlarge w3-padding w3-border w3-border-green" type="text">
+    </div>
+
+    <div style="display: flex; justify-content: center" class="w3-container w3-green w3-padding-large w3-center w3-text-black">
+      <h2>Pythagorova věta</h2>
+
+      <input style="width: 200px" id="odvesna1" class="w3-input w3-center w3-margin" type="number" placeholder="odvěsna">
+      <input style="width: 200px" id="odvesna2" class="w3-input w3-center w3-margin" type="number" placeholder="odvěsna">
+      <input style="width: 200px" id="prepona" class="w3-input w3-center w3-margin" type="number" placeholder="přepona">
+
+      <button onclick="pythagor()" class="w3-button w3-white w3-margin">Zpočítat</button>
+    </div>
+
+    <div style="display: flex; justify-content: center" class="w3-container w3-blue w3-padding-large w3-center w3-text-black">
+      <h2>Převod jednotek</h2>
+
+      <input id="firstValue" style="width: 200px" class="w3-input w3-center w3-margin" type="number" placeholder="Hodnota pro převod">
+      <select id="firstUnit" style="width: 100px" class="w3-select w3-center w3-margin" name="option">
+        <option id="mmA" name="0.001" value="mm">mm</option>
+        <option id="cmA" name="0.01" value="cm">cm</option>
+        <option id="mA" name="1" value="m">m</option>
+
+        <option id="gA" name="0.001" value="g">g</option>
+        <option id="kgA" name="1" value="kg">kg</option>
+        <option id="tA" name="1000" value="t">t</option>
+
+        <option id="kmhA" name="0.2777777" value="kmh">km/h</option>
+        <option id="msA" name="1" value="ms">m/s</option>
+      </select>
+
+      <input id="secValue" style="width: 200px" class="w3-input w3-center w3-margin" type="number" placeholder="Hodnota po převodu">
+      <select id="secUnit" style="width: 100px" class="w3-select w3-center w3-margin" name="option">
+        <option id="mmB" name="1000" value="mm">mm</option>
+        <option id="cmB" name="100" value="cm">cm</option>
+        <option id="mB" name=" 1" value="m">m</option>
+
+        <option id="gB" name="1000" value="g">g</option>
+        <option id="kgB" name="1" value="kg">kg</option>
+        <option id="tB" name="0.001" value="t">t</option>
+
+        <option id="kmhB" name="3.6" value="kmh">km/h</option>
+        <option id="msB" name="1" value="ms">m/s</option>
+      </select>
+
+      <button onclick="unitTransfer()" class="w3-button w3-white w3-margin">Převést</button>
+    </div>
+
+    <div style="display: flex; justify-content: center" class="w3-container w3-green w3-padding-large w3-center w3-text-black">
+      <h2>Obsah a obvod kruhu</h2>
+
+      <input style="width: 200px" id="polomer" class="w3-input w3-center w3-margin" type="number" placeholder="Poloměr">
+      <input style="width: 200px" id="obsah" class="w3-input w3-center w3-margin" type="number" placeholder="Obsah">
+      <input style="width: 200px" id="obvod" class="w3-input w3-center w3-margin" type="number" placeholder="Obvod">
+
+      <button onclick="kruh()" class="w3-button w3-white w3-margin">Zpočítat</button>
+    </div>
+
+    <div style="display: flex; justify-content: center" class="w3-container w3-yellow w3-padding-small w3-center w3-text-black">
+      <p>Pythagorova věta: Doplňte dvě délky stran a klikněte na "Zpočítat". Převod jednotek: Doplňte číslo, které chcete převést, vyberte vhodné jednotky a klikněte na "Převést". Obsah a obvod kruhu: Zadejte jedno z čísel a klikněte na "Zpočítat".</p>
+    </div>
+  </body>
+</html>
